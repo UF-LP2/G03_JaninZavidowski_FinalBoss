@@ -1,0 +1,10 @@
+class cShip:
+    def _init_(self,draft,crew):
+        self.draft=float(draft)
+        self.crew=float(crew)
+
+
+    def is_worth_it(self):
+        if self.draft-self.crew*1.5<20:
+            raise ValueError
+        return "robar barco"
