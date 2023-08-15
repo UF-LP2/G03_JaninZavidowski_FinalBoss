@@ -13,7 +13,7 @@ class cCargo(cShip):
     def __init__(self, cargo, quality, draft, crew):
         self.cargo = float(cargo)
         self.quality = float(quality)
-        super()._init_(draft,crew)
+        super().__init__(draft,crew)
 
     def peso_tripu(self):
         peso=self.crew*1.5
@@ -33,8 +33,8 @@ class cCargo(cShip):
 
 class cCruise(cShip):
     def __init__(self, passengers, draft, crew):
-        self.passengers=int(passengers)
-        super()._init_(draft, crew)
+        self.passengers = int(passengers)
+        super().__init__(draft, crew)
 
     def peso_pers(self):
         peso=self.passengers*2.25+self.crew*1.5
