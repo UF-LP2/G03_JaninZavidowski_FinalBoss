@@ -19,4 +19,4 @@ class cCargo(cShip):
 
         if self.draft - self.peso_tripu()<20:
             raise ValueError
-        return "robar barco"
+        return "Asalten este barco y salvamos la deuda con el FMI"

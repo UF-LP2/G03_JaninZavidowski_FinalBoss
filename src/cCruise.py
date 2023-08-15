@@ -11,4 +11,4 @@ class cCruise(cShip):
     def is_worth_it(self):
         if self.draft - self.peso_pers() < 20:
             raise ValueError
-        return "robar barco"
+        return "Asalten este barco y salvamos la deuda con el FMI"
