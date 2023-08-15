@@ -1,6 +1,6 @@
 from src.cShip import cShip
 class cCargo(cShip):
-    def _init_(self, cargo, quality, draft, crew):
+    def __init__(self, cargo, quality, draft, crew):
         self.cargo = float(cargo)
         self.quality = float(quality)
         super()._init_(draft,crew)

@@ -1,6 +1,6 @@
 from src.cShip import cShip
 class cCruise(cShip):
-    def _init_(self, passengers, draft, crew):
+    def __init__(self, passengers, draft, crew):
         self.passengers=int(passengers)
         super()._init_(draft, crew)
 

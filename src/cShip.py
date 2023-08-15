@@ -1,5 +1,5 @@
 class cShip:
-    def _init_(self,draft,crew):
+    def __init__(self,draft,crew):
         self.draft=float(draft)
         self.crew=float(crew)
 
